@@ -8,6 +8,9 @@ df = sns.load_dataset('iris')
 st.title("Estudo de flores")
 st.write(df.head())
 
+st.subheader('Estatisticas descritivas')
+st.write(df.describe())
+
 st.subheader("Iris")
 st.write("Visualização das caracter´sticas das espécies de Iris")
 scatter_plot = sns.scatterplot(data=df, x='sepal_length', y= 'sepal_width', hue='species')
